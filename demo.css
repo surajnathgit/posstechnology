@@ -1,0 +1,262 @@
+* {
+	
+}
+html, body {
+	
+}
+
+section#demo {
+	/* background: #fbfbfb; */
+	background: transparent;
+    position: relative;
+    padding: 0;
+    /* min-height: 100vh; */
+    transition: height 9999s;
+	font-size: 16px;
+}
+
+.vertical-align {
+    font-family: 'Roboto', sans-serif;
+	border-radius: 20px;
+    position: fixed;
+    bottom: -35%;
+    right: -18%;
+    transform: translateY(-50%);
+	display: none;
+}
+
+.card {
+	background: #fff;
+    box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.035);
+    padding: 7px 15px;
+}
+
+
+/* bootstrap container */
+
+@media (min-width: 1200px){
+	.container-demo {
+		width: 1170px;
+	}
+}
+
+@media (min-width: 992px){
+.container-demo {
+    width: 970px;
+}
+}
+
+@media (min-width: 768px){
+.container-demo {
+    width: 750px;
+}
+}
+
+.container-demo{
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.row-demo {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/* col */
+
+@media (min-width: 768px){
+.col-sm-offset-3 {
+    margin-left: 25%;
+}
+
+}
+
+@media (min-width: 768px){
+.col-sm-6-demo {
+    width: 50%;
+}
+
+}
+@media (min-width: 768px){
+ .col-sm-6-demo {
+    float: left;
+}
+}
+
+.col-xs-offset-0 {
+    margin-left: 0;
+}
+ .col-lg-6-demo,  .col-md-6-demo,  .col-sm-6-demo,  .col-xs-6-demo {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+div.conv-form-wrapper div.wrapper-messages {
+    position: relative;
+    height: 577px;
+    max-height: 71vh;
+    overflow-y: scroll;
+    transition: margin 0.1s;
+}
+
+
+div.conv-form-wrapper div#messages::-webkit-scrollbar, div#feed ul::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+span.clear {
+    display: block;
+    clear: both;
+}
+
+
+.spinLoader,
+.spinLoader:before,
+.spinLoader:after {
+    background: #06c5a6 !important;
+    -webkit-animation: spinLoaderChat 1s infinite ease-in-out;
+    animation: spinLoaderChat 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+.spinLoader {
+    color: #06c5a6 !important;
+    text-indent: -9999em;
+    margin: 50% auto;
+    position: relative;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.hidden{
+	display: none;
+}
+.spinLoader:before,
+.spinLoader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+.spinLoader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.spinLoader:after {
+    left: 1.5em;
+}
+@-webkit-keyframes spinLoaderChat {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+@keyframes spinLoaderChat {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+
+
+/* text aria */
+
+form.convFormDynamic textarea.userInputDynamic {
+	border: none;
+    padding: 7px 10px;
+    outline: none;
+    font-size: 0.905rem;
+    float: left;
+    width: calc(100% - 70px);
+    line-height: 1.3em;
+    min-height: 1.7em;
+    max-height: 10rem;
+    display: block;
+    max-width: 83%;
+    margin-right: 3.5%;
+
+}
+
+
+form.convFormDynamic button.submit {
+	padding: 3px;
+    border: none;
+    float: left;
+    margin: 5px;
+    color: #06c5a6;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    width: 38px;
+    height: 35px;
+    margin-top: 6px;
+    background: #fff;
+    outline: none !important;
+}
+
+
+
+div.conv-form-wrapper div#messages {
+    transition: bottom 0.15s, padding-bottom 0.15s;
+    position: absolute;
+    bottom: 30px;
+    height: auto !important;
+    width: 100%;
+    padding-bottom: 20px;
+    /* max-height: 71vh; */
+}
+
+
+div.conv-form-wrapper div.options div.option {
+    padding: 7px 12px;
+    border: 1px solid rgba(6,153,184,0.3);
+    display: inline-block;
+    margin: 8px;
+    background: #fff;
+    color: #06c5a6;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+
+@media only screen and (max-width:500px){
+	.vertical-align {
+		border-radius: 20px;
+		position: fixed;
+		bottom: -33%;
+		right: 0%;
+		transform: translateY(-50%);
+		display: none;
+		width: 100%;
+	}
+
+}
+
+	

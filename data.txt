@@ -1,0 +1,86 @@
+*Chat Bot*
+
+
+<div class="chat-popup chat-bot-section"  >
+
+        
+        <section id="demo">
+			<div class="vertical-align"  id="myForm">
+				<div class="container-demo">
+					<div class="row-demo">
+						<div class="col-sm-6-demo col-sm-offset-3 col-xs-offset-0">
+							<div class="card no-border" style="border-radius: 10px; max-width: 380px;">
+								<div id="chat" class="conv-form-wrapper">
+									<form action="" method="GET" class="hidden">
+										<select data-conv-question="Hello! POSS Technology created me as a bot." name="first-question">
+											<option value="Hello 👋">Hello 👋</option>
+											<option value="Hey! 🙌">Hey! 🙌</option>
+										</select>
+										<input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+										<input type="text" data-conv-question="Hello, {name}:0! It's a pleasure to meet you." data-no-answer="true">
+										<input type="text" data-conv-question="We provide all types of Digital Solutions." data-no-answer="true">
+										<select name="multi[]" data-conv-question="What type of Digital Solution you are looking for?" multiple>
+											
+											<option value="App Development">App Development</option>
+											<option value="Web Development">Web Development</option>
+											<option value="Digital Marketing">Digital Marketing</option>
+											<option value="DevOps">DevOps</option>
+										</select>
+										<input type="text" data-conv-question="Great! to hear that." data-no-answer="true">
+										<select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer?">
+											<option value="yes">Yes</option>
+											<option value="no">No</option>
+										</select>
+										<div data-conv-fork="programmer">
+											<div data-conv-case="yes">
+												<input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+												<input type="text" data-conv-question="You can contact us at fuelfreeind@gmail.com" data-no-answer="true">
+											</div>
+											<div data-conv-case="no">
+												<select name="thought" data-conv-question="We are here for you! You can Directly contact us on this number: +91 788-008-8944">
+													<option value="Okay">Okay</option>
+													<option value="no">Yup..</option>
+												</select>
+											</div>
+										</div>
+										<input type="text" data-conv-question="You can also drop your email." data-no-answer="true">
+										<input data-conv-question="Type in your e-mail. So our Team will contact you." data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+										<!-- <input data-conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" id="senha" name="password" required placeholder="password"> -->
+										<input type="text" data-conv-question="Thanks for dropping your email." data-no-answer="true">
+										<select data-conv-question="You can Visit our social entities">
+												<option value="google" data-callback="google">Website</option>
+												<option value="bing" data-callback="bing">Linkedin</option>
+										</select>
+										<!-- <select name="callbackTest" data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
+											<option value="yes" data-callback="rollback">Yes</option>
+											<option value="no" data-callback="restore">No</option>
+										</select> -->
+										<select data-conv-question="This is it! If you like our service, consider donating! If you need support, contact us. When the form gets to the end, the plugin submits it normally, like you had filled it." id="">
+											<option value="">Awesome!</option>
+										</select>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /// after this code i want to add img code this
+
+    <a class="chat-bot-cls open-button"  onclick="myFunction()"><img src="images/chat-bot-img.png" alt=""></a>
